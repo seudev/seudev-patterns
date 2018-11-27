@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ruleset name="seudev java ruleset"
+	xmlns="http://pmd.sourceforge.net/ruleset/2.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://pmd.sourceforge.net/ruleset/2.0.0 http://pmd.sourceforge.net/ruleset_2_0_0.xsd">
+	<description>
+		The default ruleset applied by the Seudev for java codes. 
+	</description>
+
+	<rule ref="category/java/bestpractices.xml">
+		<exclude name="AbstractClassWithoutAbstractMethod"/>
+		<exclude name="OneDeclarationPerLine"/>
+	</rule>
+
+	<rule ref="category/java/codestyle.xml">
+		<exclude name="AtLeastOneConstructor"/>
+		<exclude name="ClassNamingConventions"/>
+		<exclude name="FieldDeclarationsShouldBeAtStartOfClass"/>
+		<exclude name="GenericsNaming"/>
+		<exclude name="LocalVariableCouldBeFinal"/>
+		<exclude name="LongVariable"/>
+		<exclude name="FieldNamingConventions"/>
+		<exclude name="MethodArgumentCouldBeFinal"/>
+		<exclude name="MethodNamingConventions"/>
+		<exclude name="OnlyOneReturn"/>
+		<exclude name="ShortClassName"/>
+		<exclude name="ShortMethodName"/>
+		<exclude name="ShortVariable"/>
+		<exclude name="SuspiciousConstantFieldName"/>
+		<exclude name="UnnecessaryModifier"/>
+		<exclude name="VariableNamingConventions"/>
+		<exclude name="MissingOverride"/>	
+	</rule>
+
+	<rule ref="category/java/design.xml">
+		<exclude name="AvoidDeeplyNestedIfStmts"/>
+		<exclude name="ExcessiveClassLength"/>
+		<exclude name="ExcessiveMethodLength"/>
+		<exclude name="ExcessiveParameterList"/>
+		<exclude name="ExcessivePublicCount"/>
+		<exclude name="LoosePackageCoupling"/>
+		<exclude name="CyclomaticComplexity"/>
+		<exclude name="NcssCount"/>
+		<exclude name="NPathComplexity"/>
+	</rule>
+
+	<rule ref="category/java/documentation.xml">
+		<exclude name="CommentRequired"/>
+		<exclude name="CommentSize"/>
+	</rule>
+
+	<rule ref="category/java/errorprone.xml">
+		<exclude name="CloneThrowsCloneNotSupportedException"/>
+		<exclude name="LoggerIsNotStaticFinal"/>
+	</rule>
+
+	<rule ref="category/java/multithreading.xml"/>
+
+	<rule ref="category/java/performance.xml"/>
+
+	<rule ref="category/java/security.xml"/>
+</ruleset>
